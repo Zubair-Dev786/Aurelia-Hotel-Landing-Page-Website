@@ -1,0 +1,283 @@
+:root {
+    --section-color: #ffffff;
+    --heading-color: #1F2933;
+    --text-color: #6B7280;
+    --hover-color: #8E6F43;
+    --buttons: #B08D57;
+    --footer: #1F2933;
+    --align: center;
+    --F-weight: 600;
+    --section-align: left;
+    --section-Shadow: 1px 2px 5px #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F6F2;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: var(--align);
+    padding: 40px 0px 20px 0px;
+    color: var(--heading-color);
+    font-size: 40px;
+}
+
+h3 {
+    text-align: var(--align);
+    color: #000;
+    font-size: 25px;
+}
+
+p {
+    color: var(--text-color);
+    padding: 10px;
+    font-size: 18px;
+    text-align: var(--align);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    scroll-margin-top: 20px;
+}
+
+#Home, #Rooms, #Services, #About, #Contact {
+    scroll-margin-top: 40px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #B08D57;
+}
+
+header a {
+    padding: 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: var(--F-weight);
+}
+
+header a:hover {
+    color: var(--hover-color);
+}
+
+.image {
+    height: 90vh;
+    object-fit: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.about-cards:hover,
+.room-cards:hover,
+.services-card:hover {
+    box-shadow: #8E6F43 2px 2px 20px 2px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card-btn:hover {
+    box-shadow: black 0px 0px 10px 0px;
+    color: #ffffff;
+}
+
+/* Rooms-Cards */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.room-cards {
+    margin: 20px 2px 40px 20px;
+    border-radius: 16px;
+    height: 450px;
+    width: 350px;
+    background-color: var(--section-color);
+    box-shadow: var(--section-Shadow);
+}
+
+.room-cards h2 {
+    text-align: var(--section-align);
+    padding: 5px;
+    font-size: 30px;
+}
+
+.room-cards p {
+    text-align: var(--section-align);
+    padding: 0px 5px;
+    font-size: 16px;
+}
+
+.room-cards img {
+    height: 55%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.room-cards span {
+    display: block;
+    font-size: 18px;
+    padding: 10px 5px;
+    font-weight: var(--F-weight);
+}
+
+
+.card-btn {
+    background-color: var(--buttons);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: var(--F-weight);
+}
+
+/* Services-Cards */
+
+.services-card {
+    height: 180px;
+    width: 250px;
+    border-radius: 16px;
+    box-shadow: var(--section-Shadow);
+    background-color: var(--section-color);
+    margin: 20px 10px 40px 20px;
+}
+
+.services-card h2 {
+    text-align: var(--section-align);
+    padding: 10px;
+    font-size: 28px;
+}
+
+.services-card p {
+    text-align: var(--section-align);
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+
+/* About-Cards */
+
+.about-cards {
+    height: 450px;
+    width: 450px;
+    border-radius: 16px;
+    margin: 20px 10px 40px 20px;
+    background-color: var(--section-color);
+    color: #ffffff;
+}
+
+.about-cards h2 {
+    text-align: var(--section-align);
+    font-size: 30px;
+    padding: 10px;
+}
+
+.about-cards p {
+    text-align: var(--section-align);
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+.about-cards img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+
+/* Contact-Section */
+
+.contact p {
+    padding: 0px;
+}
+
+
+/* Footer */
+
+
+footer {
+    background-color: var(--footer);
+    text-align: center;
+    padding: 2px 0px 0px 0px;
+}
+
+footer h2 {
+    color: #B08D57;
+    padding: 10px;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+footer a {
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: var(--F-weight);
+}
+
+footer .social-links {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* Media-Querry */
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    header {
+        display: block;
+    }
+
+    #about-card {
+        display: none;
+    }
+
+    .about-cards {
+        height: 570px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    header {
+        display: block;
+    }
+
+    .image {
+        height: 70vh;
+    }
+
+}
