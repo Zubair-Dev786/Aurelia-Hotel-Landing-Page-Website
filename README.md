@@ -23,4 +23,6 @@ A responsive hotel website built with HTML, CSS, and Bootstrap.
 
 ## Live Demo
 
-https://aurelia-hotel-landing-page-website-cptzcvs64-zubair-dev.vercel.app/
+<a href="https://aurelia-hotel-landing-page-website-kmfyuojbb-zubair-dev.vercel.app/" target="_blank">
+  <button>Explore Website</button>
+</a>
